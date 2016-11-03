@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>59294331-F575-4DE5-B14C-21D8D09DD5DB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MobilePayFruitshop</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1DD67F418ECD01F9E8E52B53D00F15B5FCF9B8D7</key>
+		<string>https://github.com/DanskeBank/MobilePay-AppSwitch-SDK.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>src/examples/MobilePayFruitshop-iPhone/MobilePayFruitshop.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1DD67F418ECD01F9E8E52B53D00F15B5FCF9B8D7</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DanskeBank/MobilePay-AppSwitch-SDK.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1DD67F418ECD01F9E8E52B53D00F15B5FCF9B8D7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1DD67F418ECD01F9E8E52B53D00F15B5FCF9B8D7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DanskeBank-MobilePay-AppSwitch-SDK-GitHub</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,21 @@
+# CocoaPods
+Pods/Pods.xcodeproj/xcuserdata/*
+
+# IDE Specific files
+.idea/
+.DS_Store
+*.pbxuser
+!default.pbxuser
+xcuserdata
+#removed because of TPA issues
+#*.xcworkspace
+#!default.xcworkspace
+
+
+bin/
+obj/
+packages/
+*.suo
+*.user
+*.sln.ide/
+!*.exe

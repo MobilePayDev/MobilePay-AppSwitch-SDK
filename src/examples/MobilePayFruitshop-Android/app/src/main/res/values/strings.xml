@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fruitshop</string>
+    <string name="merchant_id_generic">APPDK0000000000</string>
+
+    <string name="product_group">Fruit</string>
+    <string name="product_name_orange">Orange</string>
+    <string name="product_name_kiwi">Kiwi</string>
+    <string name="product_name_strawberry">Strawberry</string>
+    <string name="product_name_basket">Fruit basket</string>
+    <string name="product_price">%1$s kr.</string>
+
+    <string name="payment_result_dialog_success_title">MobilePay Succeeded</string>
+    <string name="payment_result_dialog_positive">OK</string>
+    <string name="payment_result_dialog_success_message">You have now paid with MobilePay.\n\nYour MobilePay transactionId is \'%1$s\'.</string>
+    <string name="payment_result_dialog_cancelled_title">MobilePay Canceled</string>
+    <string name="payment_result_dialog_cancelled_message">You canceled the payment flow from MobilePay. Please pick a fruit and try again.</string>
+    <string name="payment_result_dialog_error_title">MobilePay Error %1$s</string>
+    <string name="payment_result_dialog_error_update_title">MobilePay Update</string>
+    <string name="payment_result_dialog_error_update_message">You have to update MobilePay before the payment can be processed.</string>
+
+    <string name="install_mobilepay_dialog_title">MobilePay not installed</string>
+    <string name="install_mobilepay_dialog_message">Do you want to download MobilePay?</string>
+    <string name="install_mobilepay_dialog_positive_text">Download</string>
+    <string name="install_mobilepay_dialog_negative_text">Cancel</string>
+
+</resources>

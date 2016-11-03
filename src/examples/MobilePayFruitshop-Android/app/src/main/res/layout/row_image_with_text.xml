@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    android:paddingBottom="@dimen/padding_half"
+    android:paddingTop="@dimen/padding_half"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_fruit_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/strawberry"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txt_fruit_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        tools:text="145 kr." />
+
+    <TextView
+        android:layout_toRightOf="@id/img_fruit_icon"
+        android:layout_toLeftOf="@id/txt_fruit_price"
+        android:layout_toEndOf="@id/img_fruit_icon"
+        android:layout_toStartOf="@id/txt_fruit_price"
+        android:paddingLeft="@dimen/padding_half"
+        android:paddingRight="@dimen/padding_half"
+        android:id="@+id/txt_fruit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        tools:text="Strawberry" />
+
+</RelativeLayout>

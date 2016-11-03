@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2689D42119CAC79100B63C07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689D42019CAC79100B63C07 /* main.m */; };
+		2689D42419CAC79100B63C07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689D42319CAC79100B63C07 /* AppDelegate.m */; };
+		2689D42D19CAC79100B63C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2689D42B19CAC79100B63C07 /* Main.storyboard */; };
+		2689D42F19CAC79100B63C07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2689D42E19CAC79100B63C07 /* Images.xcassets */; };
+		2689D43219CAC79100B63C07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2689D43019CAC79100B63C07 /* LaunchScreen.xib */; };
+		2689D45419CACE7800B63C07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2689D45319CACE7800B63C07 /* UIKit.framework */; };
+		2689D45619CACE8C00B63C07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2689D45519CACE8C00B63C07 /* CoreGraphics.framework */; };
+		2689D45819CACF8C00B63C07 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2689D45719CACF8C00B63C07 /* CoreFoundation.framework */; };
+		2689D46419CAD31400B63C07 /* ViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689D46319CAD31400B63C07 /* ViewHelper.m */; };
+		26AC87BE19D036C3002D6AD9 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC87B819D036C3002D6AD9 /* AboutViewController.m */; };
+		26AC87C019D036C3002D6AD9 /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC87BA19D036C3002D6AD9 /* ProductListViewController.m */; };
+		50059CE71D12A29A001B72FE /* libMobilePayManager1.8.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50059CE61D12A29A001B72FE /* libMobilePayManager1.8.0.a */; };
+		505D5C1A1B0367DD00C9AA44 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 505D5C191B0367DD00C9AA44 /* Product.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2689D41B19CAC79100B63C07 /* Fruit Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fruit Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2689D41F19CAC79100B63C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2689D42019CAC79100B63C07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2689D42219CAC79100B63C07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2689D42319CAC79100B63C07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2689D42C19CAC79100B63C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2689D42E19CAC79100B63C07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2689D43119CAC79100B63C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2689D45319CACE7800B63C07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2689D45519CACE8C00B63C07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2689D45719CACF8C00B63C07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2689D46219CAD31400B63C07 /* ViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHelper.h; sourceTree = "<group>"; };
+		2689D46319CAD31400B63C07 /* ViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHelper.m; sourceTree = "<group>"; };
+		26AC87B719D036C3002D6AD9 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		26AC87B819D036C3002D6AD9 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		26AC87B919D036C3002D6AD9 /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		26AC87BA19D036C3002D6AD9 /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+		26AC87BD19D036C3002D6AD9 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		50059CE61D12A29A001B72FE /* libMobilePayManager1.8.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobilePayManager1.8.0.a; sourceTree = "<group>"; };
+		505158D31C17088C002631D2 /* MobilePayCancelledPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobilePayCancelledPayment.h; sourceTree = "<group>"; };
+		505158D51C17088C002631D2 /* MobilePayPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobilePayPayment.h; sourceTree = "<group>"; };
+		505158D61C17088C002631D2 /* MobilePaySuccessfulPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobilePaySuccessfulPayment.h; sourceTree = "<group>"; };
+		505158D81C1708D4002631D2 /* MobilePayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobilePayManager.h; sourceTree = "<group>"; };
+		505D5C191B0367DD00C9AA44 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2689D41819CAC79100B63C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2689D45819CACF8C00B63C07 /* CoreFoundation.framework in Frameworks */,
+				2689D45619CACE8C00B63C07 /* CoreGraphics.framework in Frameworks */,
+				50059CE71D12A29A001B72FE /* libMobilePayManager1.8.0.a in Frameworks */,
+				2689D45419CACE7800B63C07 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2642DC4919EBF50800A490AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2689D46219CAD31400B63C07 /* ViewHelper.h */,
+				2689D46319CAD31400B63C07 /* ViewHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		2689D41219CAC79100B63C07 = {
+			isa = PBXGroup;
+			children = (
+				2689D44719CAC83200B63C07 /* Externals */,
+				2689D41D19CAC79100B63C07 /* MobilePayFruitshop */,
+				2689D41C19CAC79100B63C07 /* Products */,
+				2689D44C19CAC9CA00B63C07 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2689D41C19CAC79100B63C07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2689D41B19CAC79100B63C07 /* Fruit Shop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2689D41D19CAC79100B63C07 /* MobilePayFruitshop */ = {
+			isa = PBXGroup;
+			children = (
+				26AC87B619D036C3002D6AD9 /* ViewControllers */,
+				26AC87BC19D036C3002D6AD9 /* ViewModels */,
+				2642DC4919EBF50800A490AB /* Helpers */,
+				2689D42219CAC79100B63C07 /* AppDelegate.h */,
+				2689D42319CAC79100B63C07 /* AppDelegate.m */,
+				2689D42E19CAC79100B63C07 /* Images.xcassets */,
+				2689D43019CAC79100B63C07 /* LaunchScreen.xib */,
+				2689D42B19CAC79100B63C07 /* Main.storyboard */,
+				2689D41E19CAC79100B63C07 /* Supporting Files */,
+			);
+			path = MobilePayFruitshop;
+			sourceTree = "<group>";
+		};
+		2689D41E19CAC79100B63C07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2689D41F19CAC79100B63C07 /* Info.plist */,
+				2689D42019CAC79100B63C07 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2689D44719CAC83200B63C07 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				50059CE61D12A29A001B72FE /* libMobilePayManager1.8.0.a */,
+				505158D81C1708D4002631D2 /* MobilePayManager.h */,
+				505158D31C17088C002631D2 /* MobilePayCancelledPayment.h */,
+				505158D51C17088C002631D2 /* MobilePayPayment.h */,
+				505158D61C17088C002631D2 /* MobilePaySuccessfulPayment.h */,
+			);
+			name = Externals;
+			path = MobilePayFruitshop/Externals;
+			sourceTree = "<group>";
+		};
+		2689D44C19CAC9CA00B63C07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2689D45719CACF8C00B63C07 /* CoreFoundation.framework */,
+				2689D45519CACE8C00B63C07 /* CoreGraphics.framework */,
+				2689D45319CACE7800B63C07 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26AC87B619D036C3002D6AD9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				26AC87B719D036C3002D6AD9 /* AboutViewController.h */,
+				26AC87B819D036C3002D6AD9 /* AboutViewController.m */,
+				26AC87B919D036C3002D6AD9 /* ProductListViewController.h */,
+				26AC87BA19D036C3002D6AD9 /* ProductListViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		26AC87BC19D036C3002D6AD9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				26AC87BD19D036C3002D6AD9 /* Product.h */,
+				505D5C191B0367DD00C9AA44 /* Product.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2689D41A19CAC79100B63C07 /* MobilePayFruitshop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2689D44119CAC79100B63C07 /* Build configuration list for PBXNativeTarget "MobilePayFruitshop" */;
+			buildPhases = (
+				2689D41719CAC79100B63C07 /* Sources */,
+				2689D41819CAC79100B63C07 /* Frameworks */,
+				2689D41919CAC79100B63C07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobilePayFruitshop;
+			productName = MobilePayFruitshop;
+			productReference = 2689D41B19CAC79100B63C07 /* Fruit Shop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2689D41319CAC79100B63C07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "DanskeBank A/S";
+				TargetAttributes = {
+					2689D41A19CAC79100B63C07 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 2689D41619CAC79100B63C07 /* Build configuration list for PBXProject "MobilePayFruitshop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2689D41219CAC79100B63C07;
+			productRefGroup = 2689D41C19CAC79100B63C07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2689D41A19CAC79100B63C07 /* MobilePayFruitshop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2689D41919CAC79100B63C07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2689D42D19CAC79100B63C07 /* Main.storyboard in Resources */,
+				2689D43219CAC79100B63C07 /* LaunchScreen.xib in Resources */,
+				2689D42F19CAC79100B63C07 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2689D41719CAC79100B63C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26AC87C019D036C3002D6AD9 /* ProductListViewController.m in Sources */,
+				2689D42419CAC79100B63C07 /* AppDelegate.m in Sources */,
+				2689D46419CAD31400B63C07 /* ViewHelper.m in Sources */,
+				26AC87BE19D036C3002D6AD9 /* AboutViewController.m in Sources */,
+				505D5C1A1B0367DD00C9AA44 /* Product.m in Sources */,
+				2689D42119CAC79100B63C07 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2689D42B19CAC79100B63C07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2689D42C19CAC79100B63C07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2689D43019CAC79100B63C07 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2689D43119CAC79100B63C07 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2689D43F19CAC79100B63C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2689D44019CAC79100B63C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2689D44219CAC79100B63C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MobilePayFruitshop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../../sdk/iOS/1.5.0/MobilePayManager",
+					"/Users/larselgaardmikkelsen/devel/MobilePay-AppSwitch-SDK/sdk/iOS/1.5.0/MobilePayManager",
+					"$(PROJECT_DIR)/MobilePayFruitshop/Externals",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danskebank.mobilepay.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Fruit Shop";
+			};
+			name = Debug;
+		};
+		2689D44319CAC79100B63C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MobilePayFruitshop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../../sdk/iOS/1.5.0/MobilePayManager",
+					"/Users/larselgaardmikkelsen/devel/MobilePay-AppSwitch-SDK/sdk/iOS/1.5.0/MobilePayManager",
+					"$(PROJECT_DIR)/MobilePayFruitshop/Externals",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danskebank.mobilepay.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Fruit Shop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2689D41619CAC79100B63C07 /* Build configuration list for PBXProject "MobilePayFruitshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2689D43F19CAC79100B63C07 /* Debug */,
+				2689D44019CAC79100B63C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2689D44119CAC79100B63C07 /* Build configuration list for PBXNativeTarget "MobilePayFruitshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2689D44219CAC79100B63C07 /* Debug */,
+				2689D44319CAC79100B63C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2689D41319CAC79100B63C07 /* Project object */;
+}
