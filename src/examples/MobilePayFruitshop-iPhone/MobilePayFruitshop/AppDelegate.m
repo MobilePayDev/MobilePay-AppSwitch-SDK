@@ -60,10 +60,7 @@
     
     //ReturnSeconds - this is just an example, but our recommendation is to set it set it low.
     //[[MobilePayManager sharedInstance]setReturnSeconds:2];
-    
-    //ServerCall Callback URL - see MobilePayManager.h file for comments on to use it, and it's purpose.
-    //[[MobilePayManager sharedInstance] setServerCallbackUrl:@"https://example.com/appswitchstatus?TimeStamp=2015-08-27T15:36:42.939&OrderId=34666357&MerchantId=APPDK1175851001&TransactionId=1234567890&Amount=00001500&Currency=DKK&Country=DK&PaymentStatus=RES&ReturnCode=00&ReasonCode=00"];
-    
+
     return YES;
 }
 
