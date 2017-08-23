@@ -24,7 +24,7 @@ The MobilePay SDK enables your app to receive payments through the MobilePay app
 For technical questions about the MobilePay AppSwitch SDK or other related questions, please contact MobilePay at **+45 70 114 115** or [help@mobilepay.dk](mailto://help@mobilepay.dk)
 
 ## Requirements
-Please look at the MobilePay Developer Site for further details [MobilePay Developer site](https://www.mobilepay.dk/da-dk/Developer/Pages/developer.aspx)
+Please look at the MobilePay Developer Site for further details [MobilePay Developer site](https://developer.mobilepay.dk/appswitch-main)
 
   [1]: https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/blob/master/doc/wiki/images/mobilepay_appswitch_purchase_flow.png "MobilePay AppSwitch purchase flow"
 
