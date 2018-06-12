@@ -21,7 +21,7 @@ The MobilePay SDK enables your app to receive payments through the MobilePay app
 |WP| 1.8.0|
 
 ## Support
-For technical questions about the MobilePay AppSwitch SDK or other related questions, please contact MobilePay at **+45 70 114 115** or [help@mobilepay.dk](mailto://help@mobilepay.dk)
+For technical questions about the MobilePay AppSwitch SDK or other related questions, please contact MobilePay at **+45 70 114 115** or [developer@mobilepay.dk](mailto://developer@mobilepay.dk)
 
 ## Requirements
 Please look at the MobilePay Developer Site for further details [MobilePay Developer site](https://developer.mobilepay.dk/appswitch-main)
