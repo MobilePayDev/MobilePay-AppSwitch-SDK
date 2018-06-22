@@ -18,13 +18,12 @@ The MobilePay SDK enables your app to receive payments through the MobilePay app
 |:--------|:---|
 |Android| 1.8.1|
 |iOS| 1.8.1|
-|WP| 1.8.0|
 
 ## Support
 For technical questions about the MobilePay AppSwitch SDK or other related questions, please contact us via e-mail at [developer@mobilepay.dk](mailto://developer@mobilepay.dk)
 
 ## Requirements
-Please look at the MobilePay Developer Site for further details [MobilePay Developer site](https://developer.mobilepay.dk/appswitch-main)
+Please look at the MobilePay Developer Portal for further details [MobilePay Developer Portal](https://developer.mobilepay.dk/appswitch-main)
 
   [1]: https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/blob/master/doc/wiki/images/mobilepay_appswitch_purchase_flow.png "MobilePay AppSwitch purchase flow"
 
@@ -32,8 +31,6 @@ Please look at the MobilePay Developer Site for further details [MobilePay Devel
 The MerchantID for testing depends on which country you are targeting. The following IDs can be used:
 
 **APPDK0000000000** - Denmark
-
-**APPNO0000000000** - Norway
 
 **APPFI0000000000** - Finland
 
@@ -45,7 +42,6 @@ Please look at the wiki page for further details [wiki site](https://github.com/
 ## Documentation
  * [Getting started on iPhone](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Getting-started-on-iPhone)
  * [Getting started on Android](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Getting-started-on-Android)
- * [Getting started on Windows Phone](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Getting-started-on-Windows-Phone)
  * [Error handling](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Error-handling)
  * [Parameter specification](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Parameter-specification)
  * [Security](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Security)
