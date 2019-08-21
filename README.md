@@ -16,7 +16,7 @@ The MobilePay SDK enables your app to receive payments through the MobilePay app
 ## Latest SDK Version
 |Platform|Version|
 |:--------|:---|
-|Android| 1.8.1|
+|Android| 1.8.2|
 |iOS| 1.8.1|
 
 ## Support
