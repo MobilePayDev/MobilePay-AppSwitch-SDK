@@ -15,9 +15,9 @@ The MobilePay SDK enables your app to receive payments through the MobilePay app
 
 ## Latest SDK Version
 |Platform|Version|
-|:--------|:---|
-|Android| 1.8.2|
-|iOS| 1.8.1|
+|:--------|:---|Changes|
+|Android| 1.8.2|Support for Android SDK 28 and 29|
+|iOS| 1.8.1||
 
 ## Support
 For technical questions about the MobilePay AppSwitch SDK or other related questions, please contact us via e-mail at [developer@mobilepay.dk](mailto://developer@mobilepay.dk)
