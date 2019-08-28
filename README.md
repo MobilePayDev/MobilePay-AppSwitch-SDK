@@ -42,7 +42,6 @@ Please look at the wiki page for further details [wiki site](https://github.com/
  * [Getting started on Android](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Getting-started-on-Android)
  * [Error handling](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Error-handling)
  * [Parameter specification](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Parameter-specification)
- * [Security](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Security)
  * [Supported OS versions](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Supported-OS-versions)
  * [Known errors](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Known-errors)
  * [Cross-platform](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Cross-platform)
