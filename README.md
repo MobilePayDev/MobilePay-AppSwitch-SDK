@@ -14,10 +14,8 @@ The MobilePay SDK enables your app to receive payments through the MobilePay app
 5 - MobilePay switches back to your own app together with a MobilePay transactionId.
 
 ## Latest SDK Version
-|Platform|Version|Changes|
-|:--------|:---|:----------------------------------------|
-|Android| 1.8.2|Support for Android SDK 28 and 29|
-|iOS| 1.8.1||
+Latest version is 2.2.0.
+See the release notes [here](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/releases)
 
 ## Support
 For technical questions about the MobilePay AppSwitch SDK or other related questions, please contact us via e-mail at [developer@mobilepay.dk](mailto://developer@mobilepay.dk)
