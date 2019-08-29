@@ -3,15 +3,15 @@ The MobilePay SDK enables your app to receive payments through the MobilePay app
 ![][1]
 
 **How it works**  
-1 - You initiate the payment from your own app through the SDK.
+1. You initiate the payment from your own app through the SDK.
 
-2 - It automatically switches to the MobilePay App where the user is asked to sign in.
+1. It automatically switches to the MobilePay App where the user is asked to sign in.
 
-3 - The user confirms the payment.
+1. The user confirms the payment.
 
-4 - The receipt is shown and the user can either tap "videre" or wait one second. A counter is showing the time remaining.
+1. The receipt is shown and the user can either tap "videre" or wait one second. A counter is showing the time remaining.
 
-5 - MobilePay switches back to your own app together with a MobilePay transactionId.
+1. MobilePay switches back to your own app together with a MobilePay transactionId.
 
 ## Recommendations
 
