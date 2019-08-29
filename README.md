@@ -26,8 +26,6 @@ If your backend get a status ‘Reserved’ – the user has swiped and the orde
 You can do testing in the SDK from the app by using a test merchant id to get started.
 You can use a test-mode of the MobilePay endpoints to verify the connection and your code.
 
-## How to handle errors from MobilePay REST API
-
 ## Latest SDK Version
 Latest version is 2.2.0.
 See the release notes [here](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/releases)
