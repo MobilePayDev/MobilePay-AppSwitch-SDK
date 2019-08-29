@@ -13,6 +13,21 @@ The MobilePay SDK enables your app to receive payments through the MobilePay app
 
 5 - MobilePay switches back to your own app together with a MobilePay transactionId.
 
+## Recommendations
+
+- Check out MobilePay AppSwitch documentation on github.
+- Make sure you generate unique order ID’s, otherwise calling Refund endpoint can cause trouble.
+- Make sure you do polling on payment status on your backend and do not rely on getting the response from MobilePay through the SDK.
+If your backend get a status ‘Reserved’ – the user has swiped and the order can be completed and payment can be captured though the MobilePay AppSwitch API.
+- Use Get Reservations endpoint to identify unhandled reservations and cancel the reservations by calling the Cancel endpoint.
+- Use App code obfuscasion to make it more difficult to do reverse-engineering.
+- Make sure you do backend validation of the reservation details from the app, e.g. the amount.
+- Testing must be done in production with real money, however
+You can do testing in the SDK from the app by using a test merchant id to get started.
+You can use a test-mode of the MobilePay endpoints to verify the connection and your code.
+
+## How to handle errors from MobilePay REST API
+
 ## Latest SDK Version
 Latest version is 2.2.0.
 See the release notes [here](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/releases)
