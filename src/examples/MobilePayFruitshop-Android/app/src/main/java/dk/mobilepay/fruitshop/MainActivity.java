@@ -1,4 +1,4 @@
-package dk.danskebank.mobilepayfruitshop;
+package dk.mobilepay.fruitshop;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
@@ -12,13 +12,13 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.UUID;
 
-import dk.danskebank.mobilepay.sdk.CaptureType;
-import dk.danskebank.mobilepay.sdk.Country;
-import dk.danskebank.mobilepay.sdk.MobilePay;
-import dk.danskebank.mobilepay.sdk.ResultCallback;
-import dk.danskebank.mobilepay.sdk.model.FailureResult;
-import dk.danskebank.mobilepay.sdk.model.Payment;
-import dk.danskebank.mobilepay.sdk.model.SuccessResult;
+import dk.mobilepay.sdk.CaptureType;
+import dk.mobilepay.sdk.Country;
+import dk.mobilepay.sdk.MobilePay;
+import dk.mobilepay.sdk.ResultCallback;
+import dk.mobilepay.sdk.model.FailureResult;
+import dk.mobilepay.sdk.model.Payment;
+import dk.mobilepay.sdk.model.SuccessResult;
 
 public class MainActivity extends ListActivity {
     private static final int MOBILEPAY_PAYMENT_REQUEST_CODE = 1337;
@@ -48,10 +48,8 @@ public class MainActivity extends ListActivity {
     }
 
     private void tweakPaymentSettings() {
-        // Determines which type of payment you would like to start. CAPTURE, RESERVE and PARTIAL CAPTURE are the possibilities. CAPTURE is default. See the GitHub wiki for more information on each type.
-        MobilePay.getInstance().setCaptureType(CaptureType.CAPTURE);
-        // Set the number of seconds from the MobilePay receipt are shown to the user returns to the merchant app. Default is 1.
-        MobilePay.getInstance().setReturnSeconds(1);
+        // Determines which type of payment you would like to start. RESERVE and PARTIAL CAPTURE are the possibilities. RESERVE is default. See the GitHub wiki for more information on each type.
+        MobilePay.getInstance().setCaptureType(CaptureType.RESERVE);
         // Set the number of seconds the user has to complete the payment. Default is 0, which is no timeout.
         MobilePay.getInstance().setTimeoutSeconds(0);
     }
@@ -126,7 +124,7 @@ public class MainActivity extends ListActivity {
                 }
 
                 @Override
-                public void onCancel() {
+                public void onCancel(String orderId) {
                     // The payment was cancelled, which means the user jumped back from MobilePay before processing the payment.
                     showPaymentResultDialog(getString(R.string.payment_result_dialog_cancelled_title), getString(R.string.payment_result_dialog_cancelled_message));
                 }
