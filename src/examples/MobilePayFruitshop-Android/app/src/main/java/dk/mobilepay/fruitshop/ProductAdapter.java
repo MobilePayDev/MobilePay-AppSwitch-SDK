@@ -1,4 +1,4 @@
-package dk.danskebank.mobilepayfruitshop;
+package dk.mobilepay.fruitshop;
 
 import android.content.Context;
 import android.view.LayoutInflater;
