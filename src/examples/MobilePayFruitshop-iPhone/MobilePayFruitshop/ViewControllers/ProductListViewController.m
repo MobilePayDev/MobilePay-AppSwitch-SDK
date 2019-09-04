@@ -1,11 +1,3 @@
-//
-//  ProductListViewController.m
-//  MobilePayFruitShop
-//
-//  Created by Thomas Fekete Christensen on 18/03/14.
-//  Copyright (c) 2014 Thomas Fekete Christensen. All rights reserved.
-//
-
 #import "ProductListViewController.h"
 #import "Product.h"
 #import "MobilePayManager.h"
@@ -15,6 +7,8 @@
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *products;
 @property (nonatomic, strong) UIAlertView *errorInOrderAlertView;
+@property (nonatomic, strong) NSNumberFormatter *priceFormatter;
+
 @end
 
 @implementation ProductListViewController
@@ -24,11 +18,14 @@
     [super viewDidLoad];
     self.products = [[NSMutableArray alloc] init];
     
-    [self.products addObject:[[Product alloc] initWithName:@"Orange" price:10.00 image:[UIImage imageNamed:@"orange.png"]]];
-    [self.products addObject:[[Product alloc] initWithName:@"Kiwi" price:0.56 image:[UIImage imageNamed:@"kiwi.png"]]];
-    [self.products addObject:[[Product alloc] initWithName:@"Jordbær" price:4.43 image:[UIImage imageNamed:@"strawberry.png"]]];
-    [self.products addObject:[[Product alloc] initWithName:@"Fruit basket" price:1501.52 image:[UIImage imageNamed:@"fruit_basket.png"]]];
-
+    [self.products addObject:[[Product alloc] initWithName:@"Orange" price:[[NSDecimalNumber alloc] initWithString:@"10.00"] image:[UIImage imageNamed:@"orange.png"]]];
+    [self.products addObject:[[Product alloc] initWithName:@"Kiwi" price:[[NSDecimalNumber alloc] initWithString:@"0.56"] image:[UIImage imageNamed:@"kiwi.png"]]];
+    [self.products addObject:[[Product alloc] initWithName:@"Jordbær" price:[[NSDecimalNumber alloc] initWithString:@"4.43"] image:[UIImage imageNamed:@"strawberry.png"]]];
+    [self.products addObject:[[Product alloc] initWithName:@"Fruit basket" price:[[NSDecimalNumber alloc] initWithString:@"1501.52"] image:[UIImage imageNamed:@"fruit_basket.png"]]];
+    
+    self.priceFormatter = [[NSNumberFormatter alloc] init];
+    self.priceFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
+    self.priceFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"da_DK"];
 }
 
 
@@ -56,7 +53,7 @@
     Product *product = [self.products objectAtIndex:indexPath.row];
 
     cell.textLabel.text = product.name;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kr.", product.price];
+    cell.detailTextLabel.text = [self.priceFormatter stringFromNumber:product.price];
     cell.imageView.image = product.image;
     
     return cell;
@@ -77,10 +74,12 @@
     
     if (payment && (payment.orderId.length > 0) && (payment.productPrice >= 0)) {
         
-        [[MobilePayManager sharedInstance]beginMobilePaymentWithPayment:payment error:^(NSError * _Nonnull error) {
+        [[MobilePayManager sharedInstance] beginMobilePaymentWithPayment:payment error:^(MobilePayErrorPayment * _Nullable mobilePayErrorPayment) {
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:error.localizedDescription
-                                                            message:[NSString stringWithFormat:@"reason: %@, suggestion: %@",error.localizedFailureReason, error.localizedRecoverySuggestion]
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:mobilePayErrorPayment.error.localizedDescription
+                                                            message:[NSString stringWithFormat:@"reason: %@, suggestion: %@",
+                                                                     mobilePayErrorPayment.error.localizedFailureReason,
+                                                                     mobilePayErrorPayment.error.localizedRecoverySuggestion]
                                                            delegate:self
                                                   cancelButtonTitle:@"Cancel"
                                                   otherButtonTitles:@"Install MobilePay",nil];

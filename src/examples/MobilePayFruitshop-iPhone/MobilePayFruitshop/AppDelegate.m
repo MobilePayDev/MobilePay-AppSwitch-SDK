@@ -1,11 +1,3 @@
-//
-//  AppDelegate.m
-//  MobilePayFruitshop
-//
-//  Created by Troels Richter on 18/09/14.
-//  Copyright (c) 2014 DanskeBank A/S. All rights reserved.
-//
-
 #import "AppDelegate.h"
 #import "ViewHelper.h"
 #import "MobilePayManager.h"
@@ -44,23 +36,19 @@
     //  This is the ONLY method that can called before the setupWithMerchantId:, and it checks if AppStore version of MobilePay is installed on the device
     //  Currently there is a version of the mobilepay app in three countries and therefore three urlschemes:
     //  Denmark: mobilepay://
-    //  Norway: mobilepayno://
     //  Finland: mobilepayfi://
     //
     //  if ([[MobilePayManager sharedInstance]isMobilePayInstalled:MobilePayCountry_Denmark]) {
-    //      [[MobilePayManager sharedInstance] setupWithMerchantId:@"APPDK0000000000" merchantUrlScheme:@"fruitshop" timeoutSeconds:60 returnSeconds:3 captureType:MobilePayCaptureType_Capture country:MobilePayCountry_Denmark];
+    //      [[MobilePayManager sharedInstance] setupWithMerchantId:@"APPDK0000000000" merchantUrlScheme:@"fruitshop" timeoutSeconds:60 captureType:MobilePayCaptureType_PartialCapture country:MobilePayCountry_Denmark];
     //  }
     
     
     //Reserve/Capture
     //[MobilePayManager sharedInstance].captureType = MobilePayCaptureType_Reserve ;//this will make a reservation of the money, instead of a instant capture/withdrawal. Default is Capture.
     
-    //TimeoutSeconds - this is just an example, but our recommendation is to set it set it high in case the user is on a edge / poor  connection
+    // TimeoutSeconds - this is just an example, but our recommendation is to set it set it high in case the user is on a edge / poor  connection
     //[[MobilePayManager sharedInstance]setTimeoutSeconds:90];
     
-    //ReturnSeconds - this is just an example, but our recommendation is to set it set it low.
-    //[[MobilePayManager sharedInstance]setReturnSeconds:2];
-
     return YES;
 }
 
@@ -101,7 +89,7 @@
 }
 
 -(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
- 
+    
     //IMPORTANT - THIS IS DEPRECATED IN IOS9 - USE 'application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options' INSTEAD
     [self handleMobilePayPaymentWithUrl:url];
     return YES;
@@ -109,30 +97,31 @@
 
 - (void)handleMobilePayPaymentWithUrl:(NSURL *)url
 {
-    [[MobilePayManager sharedInstance]handleMobilePayPaymentWithUrl:url success:^(MobilePaySuccessfulPayment * _Nullable mobilePaySuccessfulPayment) {
-        NSString *orderId = mobilePaySuccessfulPayment.orderId;
-        NSString *transactionId = mobilePaySuccessfulPayment.transactionId;
-        NSString *amountWithdrawnFromCard = [NSString stringWithFormat:@"%f",mobilePaySuccessfulPayment.amountWithdrawnFromCard];
-        NSLog(@"MobilePay purchase succeeded: Your have now paid for order with id '%@' and MobilePay transaction id '%@' and the amount withdrawn from the card is: '%@'", orderId, transactionId,amountWithdrawnFromCard);
-        [ViewHelper showAlertWithTitle:@"MobilePay Succeeded" message:[NSString stringWithFormat:@"You have now paid with MobilePay. Your MobilePay transactionId is '%@'", transactionId]];
-        
-    } error:^(NSError * _Nonnull error) {
-        NSDictionary *dict = error.userInfo;
-        NSString *errorMessage = [dict valueForKey:NSLocalizedFailureReasonErrorKey];
-        NSLog(@"MobilePay purchase failed:  Error code '%li' and message '%@'",(long)error.code,errorMessage);
-        [ViewHelper showAlertWithTitle:[NSString stringWithFormat:@"MobilePay Error %li",(long)error.code] message:errorMessage];
-        
-        //Show an appropriate error message to the user. Check MobilePayManager.h for a complete description of the error codes
-        
-        //An example of using the MobilePayErrorCode enum
-        //if (error.code == MobilePayErrorCodeUpdateApp) {
-        //    NSLog(@"You must update your MobilePay app");
-        //}
-    } cancel:^(MobilePayCancelledPayment * _Nullable mobilePayCancelledPayment) {
-        NSLog(@"MobilePay purchase with order id '%@' cancelled by user", mobilePayCancelledPayment.orderId);
-        [ViewHelper showAlertWithTitle:@"MobilePay Canceled" message:@"You cancelled the payment flow from MobilePay, please pick a fruit and try again"];
-        
-    }];
+    [[MobilePayManager sharedInstance]
+     handleMobilePayPaymentWithUrl:url
+     success:^(MobilePaySuccessfulPayment * _Nullable mobilePaySuccessfulPayment) {
+         NSString *orderId = mobilePaySuccessfulPayment.orderId;
+         NSString *transactionId = mobilePaySuccessfulPayment.transactionId;
+         NSString *amountWithdrawnFromCard = [NSString stringWithFormat:@"%f", mobilePaySuccessfulPayment.amountWithdrawnFromCard.floatValue];
+         NSLog(@"MobilePay purchase succeeded: Your have now paid for order with id '%@' and MobilePay transaction id '%@' and the amount withdrawn from the card is: '%@'", orderId, transactionId,amountWithdrawnFromCard);
+         [ViewHelper showAlertWithTitle:@"MobilePay Succeeded" message:[NSString stringWithFormat:@"You have now paid with MobilePay. Your MobilePay transactionId is '%@'", transactionId]];
+     } error:^(MobilePayErrorPayment * _Nullable mobilePayErrorPayment) {
+         NSError *error = mobilePayErrorPayment.error;
+         NSDictionary *dict = error.userInfo;
+         NSString *errorMessage = [dict valueForKey:NSLocalizedFailureReasonErrorKey];
+         NSLog(@"MobilePay purchase failed:  Error code '%li' and message '%@'",(long)error.code,errorMessage);
+         [ViewHelper showAlertWithTitle:[NSString stringWithFormat:@"MobilePay Error %li",(long)error.code] message:errorMessage];
+         
+         //Show an appropriate error message to the user. Check MobilePayManager.h for a complete description of the error codes
+         
+         //An example of using the MobilePayErrorCode enum
+         //if (error.code == MobilePayErrorCodeUpdateApp) {
+         //    NSLog(@"You must update your MobilePay app");
+         //}
+     } cancel:^(MobilePayCancelledPayment * _Nullable mobilePayCancelledPayment) {
+         NSLog(@"MobilePay purchase with order id '%@' cancelled by user", mobilePayCancelledPayment.orderId);
+         [ViewHelper showAlertWithTitle:@"MobilePay Canceled" message:@"You cancelled the payment flow from MobilePay, please pick a fruit and try again"];
+     }];
 }
 
 @end
