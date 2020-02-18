@@ -42,7 +42,7 @@ The MerchantID for testing depends on which country you are targeting. The follo
 
 **APPFI0000000000** - Finland
 
-When the test MerchantID is used you are able to complete the payment flow without transferring any money.
+When the test MerchantID is used you are able to complete the payment flow from a user perspective without transferring any money.
 
 ## Cross-platform
 Please look at the wiki page for further details [wiki site](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/wiki/Cross-platform)
