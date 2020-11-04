@@ -24,7 +24,7 @@ If your backend get a status ‘Reserved’ – the user has swiped and the orde
 - Testing must be done in production with real money, however you can do testing in the SDK from the app by using a test merchant id to get started.
 
 ## Latest SDK Version
-Latest version is 2.2.1 for Android and 2.2.0 for iOS.
+Latest version is 2.2.1 for Android and 2.2.1 for iOS.
 See the release notes [here](https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/releases)
 
 ## Support
