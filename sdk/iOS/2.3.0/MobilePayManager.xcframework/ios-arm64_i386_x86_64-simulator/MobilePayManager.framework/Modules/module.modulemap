@@ -1,0 +1,6 @@
+framework module MobilePayManager {
+  umbrella header "MobilePayManager.h"
+
+  export *
+  module * { export * }
+}
