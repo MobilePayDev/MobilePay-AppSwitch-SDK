@@ -4,18 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/OpenSSL.framework/Info.plist</key>
-		<data>
-		Jw3BhKlKMWVczndBFxVgNzN/9m8=
-		</data>
-		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
-		<data>
-		u7ASMeNMBP7ah2M19c3sBMcZQys=
-		</data>
-		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
-		<data>
-		oBuuF04NKg7/XVAmm+4LP/kU9RM=
-		</data>
 		<key>Headers/MobilePayCancelledPayment.h</key>
 		<data>
 		bfbpsq49YILDe5hUBx5vku4TRG8=
@@ -47,39 +35,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/OpenSSL.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Jw3BhKlKMWVczndBFxVgNzN/9m8=
-			</data>
-			<key>hash2</key>
-			<data>
-			Cg4LHhn9R1yC4GhZXL2rEuyptb8KAfcMNlA/LrhdHbU=
-			</data>
-		</dict>
-		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			u7ASMeNMBP7ah2M19c3sBMcZQys=
-			</data>
-			<key>hash2</key>
-			<data>
-			lMdlVTDZrPdMDCoq0gheDr9m+W5wo17fhhpS7KhgJ9M=
-			</data>
-		</dict>
-		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oBuuF04NKg7/XVAmm+4LP/kU9RM=
-			</data>
-			<key>hash2</key>
-			<data>
-			m04961uQj9PwcRwXYEUI8JfYoNqz+FFyorHlptvGp5Y=
-			</data>
-		</dict>
 		<key>Headers/MobilePayCancelledPayment.h</key>
 		<dict>
 			<key>hash</key>
