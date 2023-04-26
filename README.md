@@ -1,5 +1,5 @@
 # MobilePay AppSwitch SDK
-IMPORTANT: AppSwitch is being replaced by a new and improved solution which will be available from October 2021. Note that we will no longer onboard to the old AppSwitch solution. Contact developer@mobilepay.dk if you are interested. The current solution will close down in 2022.
+IMPORTANT: AppSwitch is no longer in use and won't be available again.
 
 The MobilePay SDK enables your app to receive payments through the MobilePay app.
 ![][1]
